@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace Engle_OOPBank
 {
-    internal class Bank
+    public class Bank
     {
         private decimal _balance;
+        public Bank(decimal balance)
+        {
+            _balance = balance;
+        }
+        public decimal Balance
+        {
+            get { return _balance; }
+            set { _balance = value; }
+        }
     }
 }
