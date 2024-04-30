@@ -8,5 +8,6 @@ namespace Engle_OOPBank
 {
     internal class Bank
     {
+        private decimal _balance;
     }
 }
