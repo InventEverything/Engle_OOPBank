@@ -13,10 +13,23 @@ namespace Engle_OOPBank
         {
             _balance = balance;
         }
+        public decimal Deposit(decimal x)
+        {
+            _balance += x;
+            return _balance;
+        }
+        public decimal Withdraw(decimal x)
+        {
+            if (x > 500)
+                x = 500;
+            if (x > _balance)
+                x = _balance;
+            _balance -= x;
+            return _balance;
+        }
         public decimal Balance
         {
             get { return _balance; }
-            set { _balance = value; }
         }
     }
 }
